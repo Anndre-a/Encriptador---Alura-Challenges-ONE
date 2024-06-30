@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="./JavaScript/funciones.js"></script>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <img class="logo__Img" src="./IMG/logo.png" alt="Logo">
+        </div>
+        <div class="izquierda">
+            <input id="textInput" type="text" placeholder="Ingrese el texto aquí" autocomplete="off">
+        </div>
+        <div class="derecha">
+            <img class="img__derecho" src="./IMG/ilustracion.png" id="img_panel_derecho">
+            <h1 id="texto__1">
+                <span style="font-size: 45px;"><strong>Ningún mensaje fue<br>encontrado</strong></span><br>
+                <span style="font-size: 32px;">Ingrese el texto que desea encriptar o <br>desencriptar</span>
+            </h1>            
+                <div id="texto__2"></div>
+                <button id="copiar" type="button" name="button" onclick="copiar()">Copiar</button>
+            </div>
+            <div class="izquierda__button">
+                <p><i class="fa-solid fa-circle-exclamation" style="color: #f7a1bb;"></i> Solo minúsculas y sin acentos</p>
+            <div class="button">
+                <button type="button" id="btn__encriptar" onclick="encriptar()">Encriptar</button>
+                <button class="button__desencriptar" type="button" id="btn__desencriptar" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
